@@ -1,5 +1,6 @@
 const moment = require('moment');
 module.exports = {
+  base:'/docs/',
     title:'李博的个人网站',
     description:'李博的个人网站',
     head: [
@@ -14,7 +15,7 @@ module.exports = {
           transformer: (timestamp, lang) => {
             // 不要忘了安装 moment
             moment.locale('zh-CN')
-            return moment(timestamp).fromNow('LLLL')
+            return moment(timestamp).format('YYYY-YY-DD HH:mm:ss')
           }
         }
       ]

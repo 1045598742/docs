@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: /hero.png
-heroText: Hero 标题
-tagline: Hero 副标题
+heroImage: /logo.png
+heroText: 我的UI组件库
+tagline: 我的UI小仓库
 actionText: 快速上手 →
 actionLink: /zh/guide/
 features:
