@@ -27,8 +27,8 @@ module.exports = {
       logo: '/assets/img/logo.png',
       //  displayAllHeaders: true, // 默认值：false
       nav: [
-        { text: 'Home', link: '/' },
-        { text: 'About', link: '/about.html',
+        { text: '首页', link: '/' },
+        { text: '组件介绍', link: '/about.html',
         },
         {
           text: 'Languages',
@@ -42,8 +42,14 @@ module.exports = {
       ],
       // sidebar: 'auto'//自动模式
       sidebar: [
-        '/',
-        '/about',
-      ],
+        ['/', '首页'],
+        {
+            title: '我的博客',
+            children: [
+                ['/about.html', '组件列表']
+            ]
+        }
+
+    ]
     }
   }
