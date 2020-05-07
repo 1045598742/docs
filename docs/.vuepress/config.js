@@ -18,7 +18,7 @@ module.exports = {
           transformer: (timestamp, lang) => {
             // 不要忘了安装 moment
             moment.locale('zh-CN')
-            return moment(timestamp).format('YYYY-YY-DD HH:mm:ss')
+            return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
           }
         }
       ]
