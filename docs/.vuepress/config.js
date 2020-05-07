@@ -8,6 +8,9 @@ module.exports = {
       ['meta', { name: 'author', content: '李博' }],
       ['meta', { name: 'keywords', content: '李博的个人网站666' }],
     ],
+    markdown: {
+      lineNumbers: true
+    },
     plugins: [
       [
         '@vuepress/last-updated',
@@ -42,13 +45,14 @@ module.exports = {
       ],
       // sidebar: 'auto'//自动模式
       sidebar: [
-        ['/', '首页'],
+        ['/', '介绍'],
         {
-            title: '我的博客',
-            children: [
-                ['/about.html', '组件列表']
-            ]
-        }
+          title: '组件',
+          collapsable: false,
+          children: [
+            '/swiper',
+          ]
+        },
 
     ]
     }

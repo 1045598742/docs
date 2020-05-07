@@ -1,0 +1,21 @@
+
+
+
+@import './demo-box.scss';
+@import './color.scss';
+@import './button.scss';
+@import './pagination.scss';
+@import './select.scss';
+@import './option.scss';
+@import './swiper.scss';
+@import './swiper-item.scss';
+
+li{
+    list-style: none;
+}
+.demo-box{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}
