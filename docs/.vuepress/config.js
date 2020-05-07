@@ -31,7 +31,7 @@ module.exports = {
       //  displayAllHeaders: true, // 默认值：false
       nav: [
         { text: '首页', link: '/' },
-        { text: '组件介绍', link: '/about.html',
+        { text: '组件介绍', link: '/swiper.html',
         },
         {
           text: 'Languages',
