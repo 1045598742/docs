@@ -1,5 +1,10 @@
 <template>
-  <div class="lb-swiper-box" :style="{height:`${height}px`}" @mouseenter="mouseEnter" @mouseleave="mouseLeave">
+  <div
+    class="lb-swiper-box"
+    :style="{height:`${height}px`}"
+    @mouseenter="mouseEnter"
+    @mouseleave="mouseLeave"
+  >
     <slot></slot>
     <div class="left" @click="arrow(true)"></div>
     <div class="right" @click="arrow(false)"></div>
@@ -18,17 +23,17 @@
 export default {
   name: "swiper",
   props: {
-    height:{
-      type:Number,
-      default:300,
+    height: {
+      type: Number,
+      default: 300
     },
-    autoPlay:{
-      type:Boolean,
-      default:false,
+    autoPlay: {
+      type: Boolean,
+      default: false
     },
-    interval:{
-      type:Number,
-      default:3000,
+    interval: {
+      type: Number,
+      default: 3000
     }
   },
   data() {
@@ -44,7 +49,6 @@ export default {
   },
   methods: {
     default() {
-      if(!this.autoPlay) return;
       clearInterval(this.timer);
       this.timer = null;
       if (this.childrenLength) {
@@ -97,12 +101,26 @@ export default {
       });
     }
   },
+  watch: {
+    autoPlay: {
+      handler(isplay) {
+        if (isplay) {
+          this.$nextTick(()=>{
+            this.default();
+          })
+        } else {
+          clearInterval(this.timer);
+          this.timer = null;
+        }
+      },
+      immediate: true
+    }
+  },
   mounted() {
     this.children = this.$children.filter(
       e => e.$options.name === "swiperItem"
     );
     this.childrenLength = this.children.length - 1;
-    this.default();
   },
   beforeDestroy() {
     this.mouseEnter();

@@ -69,7 +69,7 @@
                 number
         </td>
         <td width="120">
-                ≥1000
+                ≥500
         </td>
         <td width="100">
                 3000
