@@ -1,7 +1,7 @@
-# 轮播图 
+# 按钮 
 
 <ClientOnly>
-  <swiper-demo></swiper-demo>
+  <button-demo></button-demo>
 </ClientOnly>
 
 #
@@ -26,27 +26,27 @@
     </tr>
     <tr>
         <td width="50">
-                height
+                type
         </td>
         <td width="249">
-                指定轮播图的高度（px）
+                按钮类型
         </td>
         <td width="120">
-                number
+                string
         </td>
         <td width="120">
-                —
+                warning,success,danger,info,primary
         </td>
         <td width="100">
-                300
+               —
         </td>
     </tr>
     <tr>
         <td width="50">
-                autoPlay
+                circle
         </td>
         <td width="249">
-                是否开启自动循环轮播
+                是否使用圆按钮
         </td>
         <td width="120">
                 boolean
@@ -58,7 +58,7 @@
                 false
         </td>
     </tr>
-    <tr>
+    <!-- <tr>
         <td width="50">
                 interval
         </td>
@@ -74,6 +74,6 @@
         <td width="100">
                 3000
         </td>
-    </tr>
+    </tr> -->
 </table>
 

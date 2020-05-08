@@ -1,0 +1,87 @@
+@mixin border-style(
+  $color: #d9d9d9,//边框颜色
+  $font-color: rgba(0, 0, 0, 0.65),//字体颜色
+  $background-color: white, // 背景颜色
+  $radius: 2px, // 圆角大小
+  $style: solid,//边框风格
+  $size: 14px,//字体大小
+) {
+  border: {
+    width: 1px;
+    color: $color;//
+    style: $style;
+    radius: $radius;
+  }
+  color: $font-color;
+  background-color: $background-color;
+  font-size: $size;
+}
+
+.lb-button {
+    cursor: pointer;
+  box-shadow: none;
+  user-select: none;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  text-align: center;
+  padding: 4px 15px;
+  height: 32px;
+  transition: all 0.2s;
+  @include border-style();
+  &:hover {
+    @include border-style(#3eaf7c, #3eaf7c);
+  }
+  &:focus,&:active {
+    @include border-style(#3eaf7c, #3eaf7c);
+    outline: none;
+  }
+  @each $type,$color in(
+  primary:$primary,
+  success:$success,
+  info:$info,
+  warning:$warning,
+  danger:$danger,
+){
+  &_#{$type}{
+    // background:#{$color};
+    @include border-style(#{$color},white,$color);
+  }
+}
+  @each $type,$color in(
+  primary:$primary-hover,
+  success:$success-hover,
+  info:$info-hover,
+  warning:$warning-hover,
+  danger:$danger-hover,
+){
+  &_#{$type}{
+    // background:#{$color};
+    &:hover{
+      @include border-style(#{$color},white, #{$color});
+    }
+    &:active{
+      @include border-style(#{$color},white, #{$color});
+    }
+    &:focus{
+      @include border-style(#{$color},white, #{$color});
+    }
+  }
+}
+}
+.lb-button_circle{
+  border-radius: 50%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    &:hover{
+      border-radius: 50%;
+    }
+    &:focus{
+      border-radius: 50%;
+    }
+    &:active{
+      border-radius: 50%;
+    }
+}

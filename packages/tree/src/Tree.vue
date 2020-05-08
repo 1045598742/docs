@@ -59,7 +59,7 @@ export default {
       activeLevel: null,
       treeData: {
         level: 0,
-        parent: null,
+        parent: null
       },
     };
   },

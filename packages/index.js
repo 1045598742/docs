@@ -1,5 +1,5 @@
 //用来把组件全部收集起来
-import Button from "./button";//按钮组件
+import LbButton from "./button";//按钮组件
 import Pagination from "./pagination";//分页组件
 import Swiper from "./swiper";
 import SwiperItem from "./swiper-item";
@@ -28,7 +28,7 @@ export default{
     install
 }
 export {
-    Button,
+    LbButton,
     Pagination,
     Swiper,
     SwiperItem,

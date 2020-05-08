@@ -6,8 +6,8 @@
     @mouseleave="mouseLeave"
   >
     <slot></slot>
-    <div class="left" @click="arrow(true)"></div>
-    <div class="right" @click="arrow(false)"></div>
+    <div class="left" @click="arrow(true)"><i class="iconfont icon-zuo"></i></div>
+    <div class="right" @click="arrow(false)"><i class="iconfont icon-you"></i></div>
     <ul class="circle-box">
       <li
         class="circle"

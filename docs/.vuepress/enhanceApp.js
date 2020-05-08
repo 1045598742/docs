@@ -1,4 +1,4 @@
-import './public/style/index.scss'
+import './public/style/index.scss';
 //代码高亮文件引入
 import Vue from 'vue'
 import hljs from 'highlight.js'

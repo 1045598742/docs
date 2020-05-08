@@ -1,6 +1,6 @@
 
 
-
+@import './icon//iconfont.css';
 @import './demo-box.scss';
 @import './color.scss';
 @import './button.scss';
@@ -10,12 +10,12 @@
 @import './swiper.scss';
 @import './swiper-item.scss';
 
-li{
-    list-style: none;
-}
-.demo-box{
-    *{
-        margin: 0;
-        padding: 0;
+.theme-default-content{
+    li{
+        list-style: none;
+    }
+    ul{
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }

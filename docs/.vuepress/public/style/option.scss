@@ -12,10 +12,10 @@
     cursor: pointer;
     &:hover{
       background-color: #f5f7fa;
-      color: $--color-primary;
+      color: $primary;
     }
   }
   .lb-option-active{
-    color: $--color-primary;
+    color: $primary;
     background-color: #f5f7fa;
   }
