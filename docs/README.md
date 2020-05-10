@@ -1,10 +1,10 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: 我的UI组件库
-tagline: 我的UI小仓库
+heroText: Lb-VuElement-Ui
+tagline: 为提升技术和记录学习的基于 Vue 2.0 的PC端UI小框架
 actionText: 快速上手 →
-actionLink: /button.html
+actionLink: /install.html
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
@@ -14,6 +14,5 @@ features:
   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 footer: Learning without thinking is useless, thinking without learning is perilous.
 ---
-# Hello VuePress!
 
 

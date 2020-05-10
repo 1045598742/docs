@@ -1,16 +1,16 @@
 const moment = require('moment');
 module.exports = {
   base:'/docs/',
-    title:'李博的个人网站',
+    title:'Lb-VuElement-Ui',
     description:'李博的个人网站',
     head: [
       ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
       ['meta', { name: 'author', content: '李博' }],
-      ['meta', { name: 'keywords', content: '李博的个人网站666' }],
+      ['meta', { name: 'keywords', content: '李博的个人网站' }],
     ],
-    markdown: {
-      lineNumbers: true
-    },
+    // markdown: {
+    //   lineNumbers: true
+    // },
     plugins: [
       [
         '@vuepress/last-updated',
@@ -46,6 +46,14 @@ module.exports = {
       // sidebar: 'auto'//自动模式
       sidebar: [
         ['/', '介绍'],
+        {
+          title:'入门',
+          collapsable:false,
+          children:[
+            '/install',
+            '/startQuick'
+          ]
+        },
         {
           title: '组件',
           collapsable: false,
