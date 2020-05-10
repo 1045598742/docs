@@ -1,8 +1,8 @@
 <template>
   <div class="demo-box">
     <div class="demo-case_box">
-      <h2>基础用法</h2>
-      <p class="subtitle">预览</p>
+      <h2><slot name="title"></slot></h2>
+      <p class="subtitle" ><slot name="subtitle">预览</slot></p>
       <div class="case-main">
         <slot></slot>
       </div>

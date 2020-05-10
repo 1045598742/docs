@@ -25,10 +25,9 @@ module.exports = {
     ],
     lastUpdated: 'Last Updated',  //最后更新时间
     themeConfig: {
-      displayAllHeaders: true, //显示所有页面的标题链接
+      displayAllHeaders: true, //显示所有页面的标题链接 默认值：false
       smoothScroll: true,//启用页面滚动效果
       logo: '/assets/img/logo.png',
-      //  displayAllHeaders: true, // 默认值：false
       nav: [
         { text: '首页', link: '/' },
         { text: '组件介绍', link: '/swiper.html',
@@ -61,8 +60,7 @@ module.exports = {
             '/button',
             '/swiper',
           ]
-        },
-
+        }
     ]
     }
   }

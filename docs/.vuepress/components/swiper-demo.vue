@@ -1,11 +1,25 @@
 <template>
-  <demo :code="code">
+<div>
+    <demo :code="code">
+    <template #title>基础用法</template>
+    <template #subtitle>预览</template>
     <swiper autoPlay>
       <swiper-item class="swiper-item_demo">1</swiper-item>
       <swiper-item class="swiper-item_demo">2</swiper-item>
       <swiper-item class="swiper-item_demo">3</swiper-item>
     </swiper>
   </demo>
+    <demo :code="code">
+    <template #title>基础用法</template>
+    <template #subtitle>预览</template>
+    <swiper autoPlay>
+      <swiper-item class="swiper-item_demo">1</swiper-item>
+      <swiper-item class="swiper-item_demo">2</swiper-item>
+      <swiper-item class="swiper-item_demo">3</swiper-item>
+    </swiper>
+  </demo>
+</div>
+
 </template>
 <script>
 import demo from "../../../src/demo";

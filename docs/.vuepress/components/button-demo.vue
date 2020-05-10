@@ -1,6 +1,9 @@
 <template>
-  <demo :code="code">
-      <lb-button>default</lb-button>
+  <div>
+      <demo :code="code">
+    <template #title>基础用法</template>
+    <template #subtitle>预览</template>
+        <lb-button>default</lb-button>
       <lb-button type="warning">warning</lb-button>
       <lb-button type="success">success</lb-button>
       <lb-button type="danger">danger</lb-button>
@@ -8,6 +11,8 @@
       <lb-button type="primary">primary</lb-button>
       <lb-button type="primary" circle>圆</lb-button>
   </demo>
+  </div>
+
 </template>
 <script>
 import demo from "../../../src/demo";
