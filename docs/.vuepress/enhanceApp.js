@@ -1,10 +1,20 @@
-import './public/style/index.scss';
-//代码高亮文件引入
+
+// import 'lb-vue-ui/Lb-vueUi.css'
+// import LbVueUi from 'lb-vue-ui'
+
+import './public/packages/cssstyle/index.scss';
+import LbVueUi from './public/packages/index'
+import '../../src/index.scss'
+import '../../src/demo-box.scss'
+import demo from '../../src/demo.vue'
+
 import Vue from 'vue'
-import hljs from 'highlight.js'
-//样式文件,这里我选的是sublime样式，文件里面还有其他样式可供选择
+
+import hljs from 'highlight.js' //代码高亮文件引入
 import 'highlight.js/styles/color-brewer.css' 
 
+Vue.component('demo',demo)
+Vue.use(LbVueUi);
 Vue.directive('highlight',function (el) {
   let blocks = el.querySelectorAll('pre code');
       blocks.forEach((block)=>{

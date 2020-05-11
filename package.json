@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "highlight.js": "^10.0.2",
+    "lb-vue-ui": "^1.0.0",
     "moment": "^2.24.0"
   },
   "devDependencies": {

@@ -1,17 +1,17 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: Lb-VuElement-Ui
-tagline: 为提升技术和记录学习的基于 Vue 2.0 的PC端UI小框架
+heroText: Lb-Vue-Ui
+tagline: 一套记录学习的基于 Vue 2.0 的PC端UI小框架
 actionText: 快速上手 →
 actionLink: /install.html
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: 简洁好学
+  details: 本组件编写较为简单，实现主体功能为主要目的，后期不断迭代更新升级，不断进步。
 - title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  details: 基于 Vue2.0 的开发环境，也是本人的主要技术栈，期待 Vue3.0 的到来！。
+- title: 文档编写
+  details: 本文档使用vuepress进行编写，喜欢的小伙伴可以一起使用，上手非常简单。
 footer: Learning without thinking is useless, thinking without learning is perilous.
 ---
 

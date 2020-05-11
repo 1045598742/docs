@@ -3,34 +3,17 @@
     <demo :code="code">
     <template #title>基础用法</template>
     <template #subtitle>预览</template>
-    <swiper autoPlay>
-      <swiper-item class="swiper-item_demo">1</swiper-item>
-      <swiper-item class="swiper-item_demo">2</swiper-item>
-      <swiper-item class="swiper-item_demo">3</swiper-item>
-    </swiper>
-  </demo>
-    <demo :code="code">
-    <template #title>基础用法</template>
-    <template #subtitle>预览</template>
-    <swiper autoPlay>
-      <swiper-item class="swiper-item_demo">1</swiper-item>
-      <swiper-item class="swiper-item_demo">2</swiper-item>
-      <swiper-item class="swiper-item_demo">3</swiper-item>
-    </swiper>
+    <lb-swiper autoplay>
+      <lb-swiper-item class="swiper-item_demo">1</lb-swiper-item>
+      <lb-swiper-item class="swiper-item_demo">2</lb-swiper-item>
+      <lb-swiper-item class="swiper-item_demo">3</lb-swiper-item>
+    </lb-swiper>
   </demo>
 </div>
 
 </template>
 <script>
-import demo from "../../../src/demo";
-import swiper from "../../../src/swiper";
-import swiperItem from "../../../src/swiper-item";
 export default {
-  components: {
-    swiper,
-    swiperItem,
-    demo
-  },
   data() {
     return {
       code: `<swiper :autoplay="true">

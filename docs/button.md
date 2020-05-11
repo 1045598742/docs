@@ -58,22 +58,39 @@
                 false
         </td>
     </tr>
-    <!-- <tr>
+    <tr>
         <td width="50">
-                interval
+                round
         </td>
         <td width="249">
-                轮播的延时时间（单位:ms）
+                是否开启半圆按钮
         </td>
         <td width="120">
-                number
+                boolean
         </td>
         <td width="120">
-                ≥500
+                —
         </td>
         <td width="100">
-                3000
+                false
         </td>
-    </tr> -->
+    </tr>
+    <tr>
+        <td width="50">
+                disabled
+        </td>
+        <td width="249">
+                是否禁用按钮
+        </td>
+        <td width="120">
+                boolean
+        </td>
+        <td width="120">
+                —
+        </td>
+        <td width="100">
+                false
+        </td>
+    </tr>
 </table>
 

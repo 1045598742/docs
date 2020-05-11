@@ -1,12 +1,12 @@
 const moment = require('moment');
 module.exports = {
   base:'/docs/',
-    title:'Lb-VuElement-Ui',
-    description:'李博的个人网站',
+    title:'Lb-Vue-Ui',
+    description:'Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小框架',
     head: [
       ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
-      ['meta', { name: 'author', content: '李博' }],
-      ['meta', { name: 'keywords', content: '李博的个人网站' }],
+      ['meta', { name: 'author', content: 'Lb-Vue-Ui' }],
+      ['meta', { name: 'keywords', content: 'Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小框架' }],
     ],
     // markdown: {
     //   lineNumbers: true
@@ -32,15 +32,15 @@ module.exports = {
         { text: '首页', link: '/' },
         { text: '组件介绍', link: '/swiper.html',
         },
-        {
-          text: 'Languages',
-          ariaLabel: 'Language Menu',
-          items: [
-            { text: 'Chinese', link: '/language/chinese/' },
-            { text: 'Japanese', link: '/language/japanese/' }
-          ]
-        },
-        { text: 'External', link: 'https://google.com' },
+        // {
+        //   text: 'Languages',
+        //   ariaLabel: 'Language Menu',
+        //   items: [
+        //     { text: 'Chinese', link: '/language/chinese/' },
+        //     { text: 'Japanese', link: '/language/japanese/' }
+        //   ]
+        // },
+        { text: 'github', link: 'https://google.com' },
       ],
       // sidebar: 'auto'//自动模式
       sidebar: [
@@ -58,7 +58,9 @@ module.exports = {
           collapsable: false,
           children: [
             '/button',
+            '/select',
             '/swiper',
+            '/page',
           ]
         }
     ]
