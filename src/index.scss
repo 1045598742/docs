@@ -3,8 +3,8 @@
         list-style: none;
     }
     ul{
-        margin: 0 !important;
-        padding: 0 !important;
+        // margin: 0 !important;
+        // padding: 0 !important;
     }
 }
 
@@ -17,4 +17,7 @@
     .subtitle{
         margin: 0;
     }
+}
+*{
+    word-break: break-all;
 }

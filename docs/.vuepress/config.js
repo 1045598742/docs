@@ -40,7 +40,7 @@ module.exports = {
         //     { text: 'Japanese', link: '/language/japanese/' }
         //   ]
         // },
-        { text: 'github', link: 'https://google.com' },
+        { text: 'github', link: 'https://github.com/1045598742/Lb-VuElement-Ui' },
       ],
       // sidebar: 'auto'//自动模式
       sidebar: [
@@ -58,7 +58,9 @@ module.exports = {
           collapsable: false,
           children: [
             '/button',
+            '/input',
             '/select',
+            '/date-picker',
             '/swiper',
             '/page',
           ]

@@ -3,7 +3,7 @@
     <demo :code="code">
     <template #title>基础用法</template>
     <template #subtitle>预览</template>
-    <lb-swiper autoplay>
+    <lb-swiper autoPlay>
       <lb-swiper-item class="swiper-item_demo">1</lb-swiper-item>
       <lb-swiper-item class="swiper-item_demo">2</lb-swiper-item>
       <lb-swiper-item class="swiper-item_demo">3</lb-swiper-item>
@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      code: `<swiper :autoplay="true">
+      code: `<swiper :autoPlay="true">
   <swiper-item class="swiper-item_demo"> 1 </swiper-item>
   <swiper-item class="swiper-item_demo"> 2 </swiper-item>
   <swiper-item class="swiper-item_demo"> 3 </swiper-item>
