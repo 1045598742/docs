@@ -8,7 +8,7 @@
 <h2>参数说明</h2> 
 <table width="100%">
     <tr>
-        <td width="50">
+        <td width="100">
                 参数
         </td>
         <td width="249">
@@ -25,7 +25,7 @@
         </td>
     </tr>
     <tr>
-        <td width="50">
+        <td width="100">
                 type
         </td>
         <td width="249">
@@ -42,7 +42,7 @@
         </td>
     </tr>
     <tr>
-        <td width="50">
+        <td width="100">
                 circle
         </td>
         <td width="249">
@@ -59,7 +59,7 @@
         </td>
     </tr>
     <tr>
-        <td width="50">
+        <td width="100">
                 round
         </td>
         <td width="249">
@@ -76,7 +76,7 @@
         </td>
     </tr>
     <tr>
-        <td width="50">
+        <td width="100">
                 disabled
         </td>
         <td width="249">

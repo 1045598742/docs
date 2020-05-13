@@ -1,6 +1,11 @@
 <template>
   <div class="lb-date-picker" v-clickOutside>
-    <lb-input type="text" :value="value" readonly @click.native="show=!show" />
+    <lb-input
+      type="text"
+      :value="value"
+      readonly
+      @click.native="show = !show"
+    />
     <transition name="picker">
       <ul class="lb-date-picker-popper" v-show="show" @click="popperClick">
         <li class="week-day">
@@ -33,11 +38,16 @@
             v-for="j in 7"
             :key="j"
             :class="{
-                  activeDate:arr[7 * (i - 1) + j - 1].type==='default' && dateActive.day===arr[7 * (i - 1) + j - 1].value,
-                  notThisMonth:arr[7 * (i - 1) + j - 1].type!='default',
-                  nowDay: nowDay(arr[7 * (i - 1) + j - 1])
-                }"
-          >{{ arr[7 * (i - 1) + j - 1].value }}</span>
+              activeDate:
+                arr[7 * (i - 1) + j - 1].type === 'default' &&
+                dateActive.month == month &&
+                dateActive.year == year &&
+                dateActive.day === arr[7 * (i - 1) + j - 1].value,
+              notThisMonth: arr[7 * (i - 1) + j - 1].type != 'default',
+              nowDay: nowDay(arr[7 * (i - 1) + j - 1])
+            }"
+            >{{ arr[7 * (i - 1) + j - 1].value }}</span
+          >
         </li>
       </ul>
     </transition>
@@ -46,10 +56,30 @@
 <script>
 var Dates = new Date();
 export default {
-    name:'lb-date-picker',
+  name: 'lb-date-picker',
   props: ["dateValue"],
   model: {
     prop: "dateValue"
+  },
+  watch: {
+    dateValue: {
+      handler(date) {
+        if (date) {
+          var dateFormat = new Date(date);
+          let year = dateFormat.getFullYear();
+          let month = dateFormat.getMonth() + 1;
+          let day = dateFormat.getDate();
+          this.dateActive.year = year;
+          this.dateActive.month = month;
+          this.dateActive.day = day;
+          this.year = year;
+          this.month = month;
+          this.date = day;
+          this.value = `${this.dateActive.year}-${this.dateActive.month}-${this.dateActive.day}`
+        }
+      },
+      immediate: true
+    }
   },
   directives: {
     clickOutside: {
@@ -194,31 +224,7 @@ export default {
       }
       return [...prevArr, ...arr];
     }
-  },
-  mounted() {
-    // this.arr()
   }
 };
 </script>
-<style lang="scss">
-#picker {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  // text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #316daa;
-
-    &.router-link-exact-active {
-      color: #2ce290;
-    }
-  }
-}
-</style>
