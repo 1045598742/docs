@@ -1,23 +1,24 @@
-# 轮播图 
+# 轮播图
 
 <ClientOnly>
   <swiper-demo></swiper-demo>
 </ClientOnly>
 
 #
+
 <h2>参数说明</h2> 
 <table width="100%">
     <tr>
-        <td width="100">
+        <td width="120">
                 参数
         </td>
-        <td width="249">
+        <td width="220">
                 说明
         </td>
         <td width="120">
                 类型
         </td>
-        <td width="120">
+        <td width="150">
                 可选值
         </td>
         <td width="100">
@@ -25,55 +26,122 @@
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td>
                 height
         </td>
-        <td width="249">
+        <td>
                 指定轮播图的高度（px）
         </td>
-        <td width="120">
+        <td>
                 number
         </td>
-        <td width="120">
+        <td>
                 —
         </td>
-        <td width="100">
+        <td>
                 300
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td>
                 autoPlay
         </td>
-        <td width="249">
+        <td>
                 是否开启自动循环轮播
         </td>
-        <td width="120">
+        <td>
                 boolean
         </td>
-        <td width="120">
+        <td>
                 —
         </td>
-        <td width="100">
+        <td>
                 false
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td>
                 interval
         </td>
-        <td width="249">
+        <td>
                 轮播的延时时间（单位:ms）
         </td>
-        <td width="120">
+        <td>
                 number
         </td>
-        <td width="120">
-                ≥500
+        <td>
+                ≥400
         </td>
-        <td width="100">
+        <td>
                 3000
         </td>
     </tr>
+    <tr>
+        <td>
+                mode
+        </td>
+        <td>
+                轮播图的主轴方向
+        </td>
+        <td>
+                string
+        </td>
+        <td>
+                horizontal/vertical
+        </td>
+        <td>
+                horizontal
+        </td>
+    </tr>
+    <tr>
+        <td>
+                slide
+        </td>
+        <td>
+                是否使用幻灯片模式
+        </td>
+        <td>
+                boolean
+        </td>
+        <td>
+                ——
+        </td>
+        <td>
+                false
+        </td>
+    </tr>
+    <tr>
+        <td>
+                showAllow
+        </td>
+        <td>
+                是否使用主轴两侧指示器
+        </td>
+        <td>
+                boolean
+        </td>
+        <td>
+                ——
+        </td>
+        <td>
+                true
+        </td>
+    </tr>
+    <tr>
+        <td>
+                showPoint
+        </td>
+        <td>
+                是否使用索引列表按钮
+        </td>
+        <td>
+                boolean
+        </td>
+        <td>
+                ——
+        </td>
+        <td>
+                true
+        </td>
+    </tr>
 </table>
-

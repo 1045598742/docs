@@ -8,7 +8,7 @@
 <h2>参数说明</h2> 
 <table width="100%">
     <tr>
-        <td width="100">
+        <td width="120">
                 参数
         </td>
         <td width="249">
@@ -25,7 +25,7 @@
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td width="120">
                 value/v-model
         </td>
         <td width="249">
@@ -90,6 +90,40 @@
         </td>
         <td width="100">
                 false
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+                prevIcon
+        </td>
+        <td width="249">
+                使用左侧图标
+        </td>
+        <td width="120">
+                string(类名)
+        </td>
+        <td width="120">
+                —
+        </td>
+        <td width="100">
+                ''
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+                nextIcon
+        </td>
+        <td width="249">
+                使用右侧图标
+        </td>
+        <td width="120">
+                string(类名)
+        </td>
+        <td width="120">
+                —
+        </td>
+        <td width="100">
+                ''
         </td>
     </tr>
 </table>

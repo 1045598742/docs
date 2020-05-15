@@ -3,7 +3,7 @@
     <demo :code="code1">
       <template #title>基础用法</template>
       <template #subtitle>预览</template>
-      <div style="margin-bottom:20px">value: {{ value }}</div>
+      <div class="test-value">value: {{ value }}</div>
       <lb-date-picker v-model="value"></lb-date-picker>
     </demo>
   </div>
@@ -18,11 +18,11 @@ export default {
 </template>
 
 <script>
-data(){
-  return{
-    value: ''
+  data(){
+    return{
+      value: ''
+    }
   }
-}
 <\/script>
 `,
     };

@@ -8,7 +8,7 @@
 <h2>参数说明</h2> 
 <table width="100%">
     <tr>
-        <td width="100">
+        <td width="120">
                 参数
         </td>
         <td width="249">

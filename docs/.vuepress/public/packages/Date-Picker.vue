@@ -11,7 +11,7 @@
         <li class="week-day">
           <span
             @click="yearSub"
-            @mousedown="hehe('mousedown')"
+            @mousedown="mouseEvent('mousedown')"
             @mouseup="clearTimer"
             @mouseout="clearTimer"
           >
@@ -54,6 +54,8 @@
   </div>
 </template>
 <script>
+import {timeSeat} from './utils/timeFormat'
+
 var Dates = new Date();
 export default {
   name: 'lb-date-picker',
@@ -75,7 +77,7 @@ export default {
           this.year = year;
           this.month = month;
           this.date = day;
-          this.value = `${this.dateActive.year}-${this.dateActive.month}-${this.dateActive.day}`
+          this.value = `${this.dateActive.year}-${ timeSeat(this.dateActive.month)}-${timeSeat(this.dateActive.day)}`
         }
       },
       immediate: true
@@ -99,7 +101,6 @@ export default {
   },
   data() {
     return {
-      value1: "",
       day: ["日", "一", "二", "三", "四", "五", "六"],
       year: Dates.getFullYear(),
       month: Dates.getMonth() + 1,
@@ -116,7 +117,7 @@ export default {
     };
   },
   methods: {
-    hehe(title) {
+    mouseEvent(title) {
       // this.timer = setInterval(() => {
       //   console.log(title);
       // }, 200);
@@ -142,7 +143,6 @@ export default {
     },
     dayClick({ type, value }) {
       this.month = this.getMonth(type, value);
-      this.value = `${this.year}-${this.month}-${value}`;
       Object.assign(this.dateActive, {
         year: this.year,
         month: this.month,
@@ -177,27 +177,25 @@ export default {
     },
     yearAdd() {
       this.year += 1;
-      // this.arr()
     },
     yearSub() {
       this.year -= 1;
-      // this.arr()
     },
     monthAdd() {
       if (this.month < 12) {
         this.month += 1;
       } else {
         this.month = 1;
+        this.year++;
       }
-      // this.arr()
     },
     monthSub() {
       if (this.month < 2) {
         this.month = 12;
+        this.year--;
       } else {
         this.month -= 1;
       }
-      // this.arr()
     }
   },
   computed: {

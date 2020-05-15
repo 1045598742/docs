@@ -32,11 +32,11 @@
     position: absolute;
     right: 15px;
     z-index: 1;
-    top: 13px;
+    top: 14px;
     transform:rotate(0deg);
     cursor: pointer;
     transition: all .2s;
-    // transform-origin: center;
+    transform-origin: center;
     &.rest{
       transform:rotate(180deg);
     }

@@ -3,7 +3,7 @@
     <demo :code="code1">
       <template #title>基础用法</template>
       <template #subtitle>预览</template>
-      <div style="margin-bottom:20px">value: {{ value }}</div>
+      <div class="test-value">value: {{ value }}</div>
       <lb-select v-model="value">
         <lb-option v-for="item in option" :key="item.value" :label="item.label" :value="item.value"></lb-option>
       </lb-select>
@@ -11,8 +11,8 @@
     <demo :code="code2">
       <template #title>使用清除按钮</template>
       <template #subtitle>添加 clearable属性 使用清除按钮</template>
-      <div style="margin-bottom:20px">value: {{ value }}</div>
-      <lb-select v-model="value" clearable>
+      <div class="test-value">value: {{ value1 }}</div>
+      <lb-select v-model="value1" clearable>
         <lb-option v-for="item in option" :key="item.value" :label="item.label" :value="item.value"></lb-option>
       </lb-select>
     </demo>
@@ -23,6 +23,7 @@ export default {
   data() {
     return {
       value: 0,
+      value1:0,
       option: [
         { label: "麻辣烫", value: 0 },
         { label: "过桥米线", value: 1 },
