@@ -12,7 +12,7 @@ import Vue from 'vue'
 
 import hljs from 'highlight.js' //代码高亮文件引入
 import 'highlight.js/styles/color-brewer.css' 
-
+Vue.config.silent = true
 Vue.component('demo',demo)
 Vue.use(LbVueUi);
 Vue.directive('highlight',function (el) {

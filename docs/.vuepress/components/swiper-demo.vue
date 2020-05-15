@@ -137,7 +137,4 @@ export default {
   color: white;
   font-size: 20px;
 }
-.swiper-item_demo {
-  background: #3eaf7c;
-}
 </style>

@@ -2,11 +2,11 @@ const moment = require('moment');
 module.exports = {
   base:'/docs/',
     title:'Lb-Vue-Ui',
-    description:'Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小框架',
+    description:'Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小组件',
     head: [
       ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
       ['meta', { name: 'author', content: 'Lb-Vue-Ui' }],
-      ['meta', { name: 'keywords', content: 'Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小框架' }],
+      ['meta', { name: 'keywords', content: 'Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小组件' }],
     ],
     // markdown: {
     //   lineNumbers: true
