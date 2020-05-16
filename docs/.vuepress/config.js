@@ -61,8 +61,9 @@ module.exports = {
             '/input',
             '/select',
             '/date-picker',
+            '/pagination',
             '/swiper',
-            '/page',
+            '/tree',
           ]
         }
     ]

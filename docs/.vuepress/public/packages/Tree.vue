@@ -109,7 +109,6 @@ export default {
 </script>
 <style lang="scss">
 ul {
-  // padding-left: 20px;
   box-sizing: border-box;
   li {
     overflow: hidden;

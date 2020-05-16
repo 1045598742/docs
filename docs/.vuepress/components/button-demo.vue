@@ -14,7 +14,7 @@
     <template #title>圆形按钮</template>
     <template #subtitle>使用 circle属性 和 icon属性 或者使用 round属性实现半圆按钮</template>
       <lb-button type="danger" circle icon="lb-icon-star"></lb-button>
-      <lb-button type="primary" circle icon="lb-icon-star"></lb-button>
+      <lb-button type="primary" icon="lb-icon-star" round>我是文字</lb-button>
       <lb-button type="primary" round> primary </lb-button>
       <lb-button type="success" round> success </lb-button>
   </demo>
@@ -26,8 +26,8 @@
       <lb-button disabled type="danger">danger</lb-button>
   </demo>
   </div>
-
 </template>
+
 <script>
 export default {
   data() {

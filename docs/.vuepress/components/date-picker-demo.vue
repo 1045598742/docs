@@ -12,7 +12,7 @@
 export default {
   data() {
     return {
-      value: '',
+      value: "",
       code1: `<template>
   <lb-date-picker v-model="value"></lb-date-picker>
 </template>
@@ -24,7 +24,7 @@ export default {
     }
   }
 <\/script>
-`,
+`
     };
   }
 };
