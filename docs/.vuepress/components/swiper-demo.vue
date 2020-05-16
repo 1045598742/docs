@@ -16,7 +16,7 @@
     <demo :code="code1">
       <template #title>设置自动轮播</template>
       <template #subtitle>添加 autoPlay属性设置自动轮播</template>
-      <lb-swiper autoplay>
+      <lb-swiper autoPlay>
         <lb-swiper-item class="swiper-item_demo" v-for="index in 6">
           <img
             :src="$withBase(`/assets/img/${index}.jpg`)"
@@ -33,7 +33,7 @@
         <lb-button type="success" @click="directionType">点击切换主轴</lb-button>
         <span>当前方向：{{ direction }}</span>
       </div>
-      <lb-swiper autoplay :mode="direction">
+      <lb-swiper autoPlay :mode="direction">
         <lb-swiper-item class="swiper-item_demo" v-for="index in 6">
           <img
             :src="$withBase(`/assets/img/${index}.jpg`)"
@@ -63,7 +63,7 @@
     <demo :code="code4">
       <template #title>设置幻灯片模式</template>
       <template #subtitle>使用 slide属性设置切换为幻灯片列表格式</template>
-      <lb-swiper slide height="200" autoplay>
+      <lb-swiper slide height="200" autoPlay>
         <lb-swiper-item class="swiper-item_demo" v-for="index in 6">
           <img
             :src="$withBase(`/assets/img/${index}.jpg`)"
