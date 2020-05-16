@@ -40,7 +40,7 @@ export default {
 <lb-button type="primary"> primary </lb-button>
 <lb-button type="primary" circle> 圆 </lb-button>`,
       code2: `<lb-button type="danger" circle icon="lb-icon-star"></lb-button>
-<lb-button type="primary" circle icon="lb-icon-star"></lb-button>
+<lb-button type="primary" icon="lb-icon-star" round>我是文字</lb-button>
 <lb-button type="primary" round> primary </lb-button>
 <lb-button type="success" round> success </lb-button>`,
       code3: `<lb-button disabled>plant</lb-button>

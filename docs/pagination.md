@@ -1,3 +1,7 @@
+---
+title: 分页器
+---
+
 # 分页器
 
 <ClientOnly>

@@ -1,3 +1,7 @@
+---
+title: 轮播图
+---
+
 # 轮播图
 
 <ClientOnly>
