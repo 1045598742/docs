@@ -1,5 +1,5 @@
 ---
-title: 快速上手
+title: StartQuick 快速上手
 ---
 
 # 快速上手

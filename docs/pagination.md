@@ -1,5 +1,5 @@
 ---
-title: 分页器
+title: Pagination 分页器
 ---
 
 # 分页器

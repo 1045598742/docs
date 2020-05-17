@@ -1,5 +1,5 @@
 ---
-title: 轮播图
+title: Swiper 轮播图
 ---
 
 # 轮播图

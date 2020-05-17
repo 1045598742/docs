@@ -1,5 +1,5 @@
 ---
-title: 安装
+title: Install 安装
 ---
 
 # 安装
