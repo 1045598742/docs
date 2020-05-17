@@ -126,8 +126,7 @@ export default {
       if (listenerName == "input") {
         // this.$emit("models", ev.target.value);
         this.$emit("input", ev.target.value);
-      }
-      if (listenerName == "change") {
+      }else if (listenerName == "change") {
         this.$emit("change", ev.target.value);
       } else {
         this.$emit(listenerName, ev);
