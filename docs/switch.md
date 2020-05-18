@@ -132,7 +132,7 @@ title: Switch 开关
     </tr>
     <tr>
         <td>
-                switch-widch
+                switch-width
         </td>
         <td>
                 开关的宽度
