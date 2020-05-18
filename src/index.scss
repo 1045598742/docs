@@ -1,4 +1,29 @@
+// html,body{  
+//     height: 100% !important;
+//     overflow: auto;
+// }
+
+// #app{
+//     background: black;
+//     background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+//     background:url(./background.jpg);
+//     height: 100% !important;
+//     overflow: auto;
+//     .navbar{
+//         background-color: white;
+//     }
+//     .sidebar{
+//         background: rgba(255,255,255,.7);
+//     }
+// }
+// .page-edit,.page-nav{
+//     background: white;
+//     width: 100%;
+//     max-width: 900px!important;
+//     }
+
 .theme-default-content{
+    background: white;
     li{
         list-style: none;
     }
