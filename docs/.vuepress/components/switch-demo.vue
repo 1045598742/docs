@@ -102,7 +102,7 @@ export default {
     :custom-value="{ on: 1, off: 0 }"
     onColor:'blue',
     offColor:'red',
-    flagColor:'black',
+    flagColor:'white',
   ></lb-switch>
 </template>
 
