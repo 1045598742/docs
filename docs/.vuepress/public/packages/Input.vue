@@ -40,7 +40,7 @@ export default {
   inheritAttrs: false,
   props: {
     value: {
-      type: [String, Number]
+      type: [String, Number,Object]
     },
     type: {
       type: String,
@@ -88,11 +88,11 @@ export default {
     },
     rows: {
       type: [Number,String],
-      default: "1"
+      default: "10"
     },
     cols: {
       type: [Number,String],
-      default: "3"
+      default: "50"
     },
     resize: {
       type: String,
@@ -100,7 +100,7 @@ export default {
     },
   },
   model: {
-    prop: "value",
+    prop: "value"
   },
   computed: {
     bindProps() {
@@ -123,10 +123,9 @@ export default {
   },
   methods: {
     inputEvent(ev, listenerName) {
-      if (listenerName == "input") {
-        // this.$emit("models", ev.target.value);
+      if (listenerName === "input") {
         this.$emit("input", ev.target.value);
-      }else if (listenerName == "change") {
+      }else if (listenerName === "change") {
         this.$emit("change", ev.target.value);
       } else {
         this.$emit(listenerName, ev);

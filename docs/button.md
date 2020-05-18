@@ -29,70 +29,70 @@ title: Button 按钮
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td>
                 type
         </td>
-        <td width="249">
+        <td>
                 按钮类型
         </td>
-        <td width="120">
+        <td>
                 string
         </td>
-        <td width="120">
+        <td>
                 warning,success,danger,info,primary
         </td>
-        <td width="100">
+        <td>
                —
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td>
                 circle
         </td>
-        <td width="249">
+        <td>
                 是否使用圆按钮
         </td>
-        <td width="120">
+        <td>
                 boolean
         </td>
-        <td width="120">
+        <td>
                 —
         </td>
-        <td width="100">
+        <td>
                 false
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td>
                 round
         </td>
-        <td width="249">
+        <td>
                 是否开启半圆按钮
         </td>
-        <td width="120">
+        <td>
                 boolean
         </td>
-        <td width="120">
+        <td>
                 —
         </td>
-        <td width="100">
+        <td>
                 false
         </td>
     </tr>
     <tr>
-        <td width="100">
+        <td>
                 disabled
         </td>
-        <td width="249">
+        <td>
                 是否禁用按钮
         </td>
-        <td width="120">
+        <td>
                 boolean
         </td>
-        <td width="120">
+        <td>
                 —
         </td>
-        <td width="100">
+        <td>
                 false
         </td>
     </tr>

@@ -58,6 +58,7 @@ module.exports = {
           collapsable: false,
           children: [
             '/button',
+            '/switch',
             '/input',
             '/select',
             '/date-picker',
