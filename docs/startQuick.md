@@ -24,6 +24,7 @@ import {
     Switch,
     DatePicker,
     Pagination,
+    Tree
 
 } from 'lb-vue-ui'
 
