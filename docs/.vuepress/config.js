@@ -65,6 +65,7 @@ module.exports = {
             '/pagination',
             '/swiper',
             '/tree',
+            '/from',
           ]
         }
     ]
