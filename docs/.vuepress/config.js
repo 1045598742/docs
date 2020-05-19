@@ -30,7 +30,7 @@ module.exports = {
       logo: '/assets/img/logo.png',
       nav: [
         { text: '首页', link: '/' },
-        { text: '组件介绍', link: '/swiper.html',
+        { text: '组件介绍', link: '/startQuick.html',
         },
         // {
         //   text: 'Languages',
@@ -65,7 +65,7 @@ module.exports = {
             '/pagination',
             '/swiper',
             '/tree',
-            '/from',
+            '/form'
           ]
         }
     ]
