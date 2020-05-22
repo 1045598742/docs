@@ -59,6 +59,7 @@ module.exports = {
           children: [
             '/button',
             '/switch',
+            '/rate',
             '/input',
             '/select',
             '/date-picker',

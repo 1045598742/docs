@@ -13,7 +13,7 @@
         <i
           :style="{ opacity: item[option.children] && item[option.children].length ? 1 : 0 }"
           @click="show(index)"
-          class="lb-icon-you allow"
+          class="lb-icon-yousanjiao allow"
           :class="{ isRotate: showObj[index] }"
         ></i>
         <span @click="nodeClick(item, $event)">{{ item.name }}</span>
