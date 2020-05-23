@@ -21,11 +21,12 @@ import {
     Select,
     Option,
     Input,
+    Rate,
     Switch,
     DatePicker,
     Pagination,
-    Tree
-
+    Tree,
+    Dialog
 } from 'lb-vue-ui'
 
 Vue.use(Button)；
