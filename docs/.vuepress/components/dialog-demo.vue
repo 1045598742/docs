@@ -69,7 +69,7 @@
 export default {
   data() {
     return {
-      visible:true,
+      visible:false,
       visible1:false,
       visible2:false,
       code1: `<template>
