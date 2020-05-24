@@ -63,6 +63,24 @@
         </template>
       </lb-dialog>
     </demo>
+    <demo :code="code4">
+      <template #title>拖拽dialog</template>
+      <template #subtitle>添加 drop属性可拖拽dialog头部进行拖拽</template>
+      <div class="test-value">
+        <lb-button type="success" @click="showDialog3">点击显示弹窗</lb-button>
+      </div>
+      <lb-dialog :visible.sync="visible3" drop>
+        <div>这是一个可以拖拽的dialog</div>
+        <div>这是一个可以拖拽的dialog</div>
+        <div>这是一个可以拖拽的dialog</div>
+        <div>这是一个可以拖拽的dialog</div>
+        <div>这是一个可以拖拽的dialog</div>
+        <div>这是一个可以拖拽的dialog</div>
+        <template #footer>
+          <lb-button style="margin-bottom:0" type="success" @click="closeDialog3">关闭弹窗</lb-button>
+        </template>
+      </lb-dialog>
+    </demo>
   </div>
 </template>
 <script>
@@ -72,6 +90,7 @@ export default {
       visible:false,
       visible1:false,
       visible2:false,
+      visible3:false,
       code1: `<template>
   <lb-dialog :visible.sync="visible" @close="close" @open="open">
     <div>这是一段占位显示文字</div>
@@ -177,6 +196,36 @@ export default {
   }
 <\/script>
 `,
+      code4: `<template>
+  <lb-dialog :visible.sync="visible" drop >
+    <div>这是一个可以拖拽的dialog</div>
+    <div>这是一个可以拖拽的dialog</div>
+    <div>这是一个可以拖拽的dialog</div>
+    <div>这是一个可以拖拽的dialog</div>
+    <div>这是一个可以拖拽的dialog</div>
+    <div>这是一个可以拖拽的dialog</div>
+    <template #footer>
+      <lb-button type="success" @click="closeDialog">关闭弹窗</lb-button>
+    </template>
+  </lb-dialog>
+</template>
+
+<script>
+  data() {
+    return{
+      visible:false,
+    } 
+  },
+  methods: {
+    showDialog() {
+      this.visible = true;
+    },
+    closeDialog() {
+      this.visible = false;
+    }   
+  }
+<\/script>
+`,
 
     };
   },
@@ -190,6 +239,9 @@ export default {
     showDialog2(){
       this.visible2 = true;
     },
+    showDialog3(){
+      this.visible3 = true;
+    },
     closeDialog(){
       this.visible = false;
     },
@@ -198,6 +250,9 @@ export default {
     },
     closeDialog2(){
       this.visible2 = false;
+    },
+    closeDialog3(){
+      this.visible3 = false;
     },
     close(){
       console.log('close');

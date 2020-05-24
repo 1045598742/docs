@@ -12,10 +12,10 @@ title: Dialog 弹窗
 <h2>参数说明</h2> 
 <table width="100%">
     <tr>
-        <td width="80">
+        <td width="150">
                 参数
         </td>
-        <td width="150">
+        <td width="300">
                 说明
         </td>
         <td width="80">
@@ -24,7 +24,7 @@ title: Dialog 弹窗
         <td width="80">
                 可选值
         </td>
-        <td width="300">
+        <td width="100">
                 默认值
         </td>
     </tr>
@@ -145,6 +145,23 @@ title: Dialog 弹窗
         </td>
         <td>
                 true
+        </td>
+    </tr>
+    <tr>
+        <td>
+                drop
+        </td>
+        <td>
+                是否启用dialog拖拽功能
+        </td>
+        <td>
+                boolean
+        </td>
+        <td>
+                ——
+        </td>
+        <td>
+                false
         </td>
     </tr>
 </table>
