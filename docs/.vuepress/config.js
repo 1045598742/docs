@@ -67,6 +67,7 @@ module.exports = {
             '/swiper',
             '/tree',
             '/dialog',
+            '/slider',
             '/form'
           ]
         }
