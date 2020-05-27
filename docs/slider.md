@@ -2,7 +2,7 @@
 title: Slider 滑块
 ---
 
-# 树形列表 
+# 滑块 
 
 <ClientOnly>
   <slider-demo></slider-demo>

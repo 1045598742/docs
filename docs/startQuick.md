@@ -26,7 +26,8 @@ import {
     DatePicker,
     Pagination,
     Tree,
-    Dialog
+    Dialog,
+    Slider
 } from 'lb-vue-ui'
 
 Vue.use(Button)；
