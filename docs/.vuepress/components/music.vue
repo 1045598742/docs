@@ -32,7 +32,7 @@
         style="margin-left:50px;margin-bottom:50px"
       ></lb-slider>
     </div>
-    <audio :src="play_url" ref="audio" loop></audio>
+    <audio :src="$withBase(`/assets/music.mp3`)" ref="audio" loop></audio>
   </div>
 </template>
 <script>
@@ -156,8 +156,7 @@ export default {
 ↵[02:40.08]It's a different game
 ↵[02:41.66]Balling till I fall
 ↵[02:43.44]I'm the game
-↵`,
-play_url:"https://webfs.yun.kugou.com/202005280010/1f106781f07075a4327dac4cb17f6634/G146/M0A/18/15/0g0DAFvhRh6AFx_VACjeo1Yx_OU180.mp3"
+↵`
     };
   },
   methods: {
