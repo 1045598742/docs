@@ -20,9 +20,10 @@
     <div class="footer">
       <lb-button type="success" round @click="ls" style="margin:0 20px 0 0">-0.5倍速</lb-button>
       <lb-button style="margin:0" :type="state=='stop'?'danger':'primary'" circle @click="state == 'stop' ? play() : stop()" :icon='state == "stop" ? "lb-icon-yousanjiao" : "lb-icon-zanting"'></lb-button>
-      <!-- <div class="play" @click="state == 'stop' ? play() : stop()">{{ state == "stop" ? "▶" : "⏸" }}</div> -->
       <lb-button type="success" round  @click="bs" style="margin:0 20px 0 20px">+0.5倍速</lb-button>
+      <div style="margin-right:20px;color:white">{{songStarted}}</div>
       <lb-slider v-model="progress" @change="change" lang="500px"></lb-slider>
+      <div style="margin-left:20px;color:white">{{ songLong }}</div>
       <lb-slider
         v-model="sound"
         @input="changesound"
@@ -37,11 +38,12 @@
 </template>
 <script>
 let audio = null;
+import moment from 'moment'
 export default {
   data() {
     return {
       width: 0,
-      sound:1,
+      sound:0.5,
       lyrics: [],
       timer: null,
       state: "stop",
@@ -49,6 +51,8 @@ export default {
       bfb: 0,
       activeLyricIndex: 0,
       progress: 0,
+      songStarted:'00:00',
+      songLong:'00:00',
       audio_name: "王嘉尔、Gucci Mane - Different Game",
       img: "http://imge.kugou.com/stdmusic/20181106/20181106154121212021.jpg",
       lyric: `﻿[id:$00000000]
@@ -168,6 +172,7 @@ export default {
       this.$refs.audio.volume = val;
     },
     play() {
+      this.clearTime()
       this.$refs.audio.play();
       this.$refs.audio.volume = this.sound;
       this.state = "play";
@@ -175,6 +180,7 @@ export default {
         const { currentTime, duration } = this.$refs.audio;
         this.progress = currentTime / duration;
         this.lyricsMove(currentTime, duration);
+        this.songStarted = `${this.timeFormat(parseInt(currentTime/60))}:${this.timeFormat(Math.round(currentTime%60))}`
         if (this.progress >= 1) {
           this.progress = 1;
           this.state = "stop";
@@ -215,7 +221,19 @@ export default {
         const top = this.$refs.lyrics.querySelector("li.active").offsetTop;
        this.$refs.lyrics.style.top = -top + "px";
       })
+    },
+    timeFormat(time){
+      return time<10?`0${time}`:time;
+    },
+    songTime(){
+      alert('音乐加载成功，可以播放啦！')
+       let {duration} = this.$refs.audio
+       this.songLong = `${this.timeFormat(parseInt(duration/60))}:${this.timeFormat(Math.round(duration%60))}`
     }
+  },
+  beforeDestroy () {
+    this.clearTime();
+    this.$refs.audio.removeEventListener('canplaythrough',this.songTime)
   },
   mounted() {
          let arr = [];
@@ -227,6 +245,7 @@ export default {
         }
       );
       this.lyrics = arr;
+      this.$refs.audio.addEventListener('canplaythrough',this.songTime)
   }
 };
 </script>

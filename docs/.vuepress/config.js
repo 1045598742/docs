@@ -68,8 +68,9 @@ module.exports = {
             '/tree',
             '/dialog',
             '/slider',
+            '/music',
+            '/clip-image',
             '/form',
-            '/music'
           ]
         }
     ]

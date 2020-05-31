@@ -1,12 +1,11 @@
 ---
-title: Slider 滑块
+title: Clip-Image 图片裁切
 ---
 
-# 滑块 
 
-<ClientOnly>
-  <slider-demo></slider-demo>
-</ClientOnly>
+# 图片裁切 
+
+<ClientOnly><clip-image></clip-image></ClientOnly>
 
 #
 <h2>参数说明</h2> 
@@ -21,7 +20,7 @@ title: Slider 滑块
         <td width="80">
                 类型
         </td>
-        <td width="120">
+        <td width="300">
                 可选值
         </td>
         <td width="160">
@@ -33,24 +32,41 @@ title: Slider 滑块
                 type
         </td>
         <td>
-                滑块方向
+                返回的图片数据类型
         </td>
         <td>
                 string
         </td>
         <td>
-                hz/vl
+                base64/file/formData
         </td>
         <td>
-               hz
+               base64
         </td>
     </tr>
     <tr>
         <td>
-                v-model
+                slice
         </td>
         <td>
-                双向数据绑定的值
+                是否开启切片功能
+        </td>
+        <td>
+                boolean
+        </td>
+        <td>
+                ——
+        </td>
+        <td>
+               true
+        </td>
+    </tr>
+    <tr>
+        <td>
+                maxWidth
+        </td>
+        <td>
+                处理图片后的宽度
         </td>
         <td>
                 number
@@ -59,15 +75,15 @@ title: Slider 滑块
                 ——
         </td>
         <td>
-               0
+           750
         </td>
     </tr>
     <tr>
         <td>
-                max
+                maxHeight
         </td>
         <td>
-                滑块最大值
+                处理图片后的高度
         </td>
         <td>
                 number
@@ -76,24 +92,7 @@ title: Slider 滑块
                 ——
         </td>
         <td>
-           1
-        </td>
-    </tr>
-    <tr>
-        <td>
-               lang 
-        </td>
-        <td>
-              滑块的宽或高(hz模式下代表宽，vl模式下代表高)  
-        </td>
-        <td>
-                string
-        </td>
-        <td>
-                css单位
-        </td>
-        <td>
-           100%
+           500
         </td>
     </tr>
 </table>
@@ -117,24 +116,13 @@ title: Slider 滑块
     </tr>
     <tr>
         <td >
-                input
+                finish
         </td>
         <td >
-                滑块变动即触发
+                切片完成后的返回值
         </td>
         <td >
-             v-model值
-        </td>
-    </tr>
-    <tr>
-        <td >
-                change
-        </td>
-        <td >
-                鼠标移动滑块抬起触发
-        </td>
-        <td >
-             v-model值
+             根据type值返回对应格式的数组
         </td>
     </tr>
 </table>
