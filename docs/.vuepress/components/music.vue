@@ -54,113 +54,82 @@ export default {
       songStarted:'00:00',
       songLong:'00:00',
       surePlay:false,
-      audio_name: "王嘉尔、Gucci Mane - Different Game",
-      img: "http://imge.kugou.com/stdmusic/20181106/20181106154121212021.jpg",
-      lyric: `﻿[id:$00000000]
-↵[ar:王嘉尔、Gucci Mane]
-↵[ti:Different Game]
-↵[by:]
-↵[hash:6c0057852cd0ccab19085d9580253b4e]
-↵[al:]
-↵[sign:]
-↵[qq:]
-↵[total:167366]
-↵[offset:0]
-↵[00:00.13]王嘉尔、Gucci Mane - Different Game
-↵[00:00.89]作词：王嘉尔、Gucci Mane
-↵[00:01.20]作曲：王嘉尔、BOYTOY
-↵[00:01.50]编曲：王嘉尔、BOYTOY
-↵[00:01.76]制作人：王嘉尔、BOYTOY
-↵[00:10.37]Imma show you it's a different game
-↵[00:12.21]Hold up straight up
-↵[00:13.78]It's a different game
-↵[00:16.00]Imma show you it's a different game
-↵[00:18.38]Hold up straight up
-↵[00:19.71]It's a different game
-↵[00:21.14]You can try to stop me
-↵[00:22.21]But I'm in a different game
-↵[00:24.05]Hold up straight up
-↵[00:25.43]It's a different game
-↵[00:27.00]You can try to stop me
-↵[00:28.02]But I'm in a different game
-↵[00:29.86]Hold up straight up
-↵[00:31.28]It's a different game
-↵[00:32.90]Balling till I fall
-↵[00:34.62]I'm the game
-↵[00:35.89]Flexing on it flexing on it not them diamonds
-↵[00:38.69]Rich in my ambition
-↵[00:39.81]Balling we go all in
-↵[00:41.65]Call me China man
-↵[00:42.76]Team wang made it Jackson Brand
-↵[00:44.51]Why you faking reputation buying profiles then
-↵[00:47.80]This a different game
-↵[00:49.42]Who would take the blame
-↵[00:50.68]Who do I respect society
-↵[00:52.25]Who do I suspect hey
-↵[00:53.72]I'll be flexing man
-↵[00:54.84]One man flexing land
-↵[00:55.85]Call me flexing trend
-↵[00:56.97]Call me one man band
-↵[00:58.03]Different game
-↵[00:59.20]I can see them coming through
-↵[01:00.62]I can feel it when I do
-↵[01:02.19]Stay a hundred flexing
-↵[01:03.21]Till I be the last man standing
-↵[01:05.11]I can see them coming through
-↵[01:06.48]I can feel it when I do
-↵[01:08.08]Stay a hundred flexing
-↵[01:09.12]Till I be the last man standing
-↵[01:10.95]Never go back in the days
-↵[01:12.37]Never get back in the maze
-↵[01:13.75]People gon trip in the race
-↵[01:15.20]Never gon keep up my pace
-↵[01:16.70]Never get back in the days
-↵[01:18.14]Never get back in the maze
-↵[01:19.64]Jackson
-↵[01:20.55]Imma show you it's a different game
-↵[01:22.61]Hold up straight up
-↵[01:24.01]It's a different game
-↵[01:26.22]Imma show you it's a different game
-↵[01:28.48]Hold up straight up
-↵[01:29.81]It's a different game
-↵[01:31.54]You can try to stop me
-↵[01:32.46]But I'm in a different game
-↵[01:34.34]Hold up straight up
-↵[01:35.67]It's a different game
-↵[01:37.20]You can try to stop me
-↵[01:38.31]But I'm in a different game
-↵[01:40.15]Hold up straight up
-↵[01:41.53]It's a different game
-↵[01:43.07]Balling till I fall
-↵[01:44.87]I'm the game
-↵[01:46.52]Jackson Wang and I'm the Gucci mane
-↵[01:49.42]Switch the lane I'm in a different game
-↵[01:52.28]I was selling game right off biscayne
-↵[01:55.29]Pull up in a drop top and **** her brain
-↵[01:58.04]Low down dirty game got a balmain
-↵[02:01.05]Still pushing bells **** the chain gang
-↵[02:03.95]Ain't nothing changed but the chain man
-↵[02:06.86]Big old diamond chain and it blang blang
-↵[02:09.88]Balling like lamar Jackson a duel threat
-↵[02:12.30]You just a freshman
-↵[02:13.17]You still ain't in the league yet
-↵[02:15.31]I be fresh to death I pull up make them upset
-↵[02:18.59]Diamonds on my chest make them tuck that
-↵[02:21.15]Hold up straight up
-↵[02:22.47]It's a different game
-↵[02:24.72]Imma show you it's a different game
-↵[02:26.97]Hold up straight up
-↵[02:28.40]It's a different game
-↵[02:29.93]You can try to stop me
-↵[02:31.00]But I'm in a different game
-↵[02:32.85]Hold up straight up
-↵[02:34.23]It's a different game
-↵[02:35.80]You can try to stop me
-↵[02:36.82]But I'm in a different game
-↵[02:38.71]Hold up straight up
-↵[02:40.08]It's a different game
-↵[02:41.66]Balling till I fall
-↵[02:43.44]I'm the game
+      audio_name: "某幻君、中国BOY - 电子羊",
+      img: "http://imge.kugou.com/stdmusic/20200518/20200518173106795048.jpg",
+      lyric: `↵[00:00.00]某幻君、中国BOY - 电子羊
+↵[00:04.66]词：某幻君
+↵[00:06.78]曲：某幻君
+↵[00:08.89]编曲：中国boy
+↵[00:11.44]混音：杨秋儒
+↵[00:13.98]是否能梦到电子羊ay
+↵[00:17.13]When I can catch that bio sheep
+↵[00:20.82]漂浮在霓虹的海洋ay
+↵[00:24.18]When I can let that sheep grab ay
+↵[00:27.37]街边的鸣笛像在开派对
+↵[00:29.34]电流在我脑中作祟
+↵[00:30.72]掀起被子和天气配对
+↵[00:32.02]天气很差心情节节败 退
+↵[00:34.19]这城市没有白天
+↵[00:35.42]黑夜中升起工业的白烟
+↵[00:37.11]萦绕在光怪的城市
+↵[00:38.24]给那破败的程序
+↵[00:39.26]带来寂寞又升起狼烟
+↵[00:40.65]人们从不正眼看我
+↵[00:42.24]他们沉浸在这低端生活
+↵[00:43.98]我的任务是帮他们排解寂寞
+↵[00:45.72]但谁又能来铺平我的颠簸
+↵[00:47.47]I have no mouth but I still wanna scream
+↵[00:49.71]无声狂啸众人却皆是醉
+↵[00:51.29]I am like a mouse though
+↵[00:52.15]I don't wanna get into cats stomach casually ay
+↵[00:54.89]呼吸 我来到这片街道
+↵[00:56.46]雾气 是工业的毒药
+↵[00:58.18]I ain't got drunk
+↵[00:58.93]钢筋散发的香薰进入我的肺
+↵[01:00.98]My feelings got fake
+↵[01:02.33]温暖肌肤没有知觉
+↵[01:04.05]数字充斥着我的视觉
+↵[01:05.31]却期望在梦里面
+↵[01:06.27]和那梦不到的 电子羊相见
+↵[01:08.97]是否能梦到电子羊ay
+↵[01:12.04]When I can catch that bio sheep
+↵[01:15.73]漂浮在霓虹的海洋ay
+↵[01:19.01]When I can let that sheep grab ay
+↵[01:26.96]When I can let that sheep grab ay
+↵[01:29.26]是否能梦到电子羊ay
+↵[01:32.80]When I can catch that bio sheep ay
+↵[01:36.20]漂浮在霓虹的海洋ay
+↵[01:39.61]When I can let that sheep grab ay
+↵[01:42.72]从未听到过人们说过再见
+↵[01:44.22]唯能爱恋身上
+↵[01:45.07]缠绕着的电线
+↵[01:46.04]就算摔倒我也不能流出血
+↵[01:47.73]只能低头看着洒落的营养液
+↵[01:49.44]会呼吸的街道人流涌动
+↵[01:50.99]无法呼吸的我想要
+↵[01:52.32]伸手触碰
+↵[01:52.97]眼前浮窗却提醒我
+↵[01:54.11]请勿触碰
+↵[01:54.55]身体像是八百吨的负重 error
+↵[01:56.56]I got riches in my mind
+↵[01:58.00]I got nothing in my mind
+↵[01:59.50]I got pleasure sorrow anger Joys passions in my mind
+↵[02:02.82]Nobody cares
+↵[02:03.62]停留 都是无谓的挣扎
+↵[02:04.96]爆发着将那爱恋着的拔下
+↵[02:06.52]街道很冰感觉像是回了家
+↵[02:08.00]希望电子羊不会嫌弃
+↵[02:09.37]我的邋遢
+↵[02:10.40]是否能梦到电子羊ay
+↵[02:13.83]When I can catch that bio sheep
+↵[02:17.33]漂浮在霓虹的海洋ay
+↵[02:20.68]When I can let that sheep grab ay
+↵[02:24.13]是否能梦到电子羊ay
+↵[02:27.60]When I can catch that bio sheep
+↵[02:30.99]漂浮在霓虹的海洋ay
+↵[02:34.46]When I can let that sheep grab ay
+↵[02:37.91]漂浮在霓虹的海洋ay
+↵[02:41.34]When I can let that sheep grab ay
 ↵`
     };
   },
