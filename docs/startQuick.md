@@ -27,7 +27,8 @@ import {
     Pagination,
     Tree,
     Dialog,
-    Slider
+    Slider,
+    ClipImage
 } from 'lb-vue-ui'
 
 Vue.use(Button)；

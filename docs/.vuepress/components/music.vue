@@ -53,6 +53,7 @@ export default {
       progress: 0,
       songStarted:'00:00',
       songLong:'00:00',
+      surePlay:false,
       audio_name: "王嘉尔、Gucci Mane - Different Game",
       img: "http://imge.kugou.com/stdmusic/20181106/20181106154121212021.jpg",
       lyric: `﻿[id:$00000000]
@@ -226,7 +227,10 @@ export default {
       return time<10?`0${time}`:time;
     },
     songTime(){
-      alert('音乐加载成功，可以播放啦！')
+      if(!this.surePlay){
+        alert('音乐加载成功，可以播放啦！');
+      }
+      this.surePlay = true
        let {duration} = this.$refs.audio
        this.songLong = `${this.timeFormat(parseInt(duration/60))}:${this.timeFormat(Math.round(duration%60))}`
     }
