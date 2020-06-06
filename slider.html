@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Slider 滑块 | Lb-Vue-Ui</title>
+    <meta name="description" content="Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小组件">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/docs/assets/img/logo.png">
+  <meta name="author" content="Lb-Vue-Ui">
+  <meta name="keywords" content="Lb-Vue-Ui 个人网站 一套记录学习的基于 Vue 2.0 的PC端UI小组件">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.77686f37.css" as="style"><link rel="preload" href="/docs/assets/js/app.b2c5c351.js" as="script"><link rel="preload" href="/docs/assets/js/3.93e1bfa6.js" as="script"><link rel="preload" href="/docs/assets/js/31.b4dde4e1.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.6077416b.js"><link rel="prefetch" href="/docs/assets/js/11.0fd378f2.js"><link rel="prefetch" href="/docs/assets/js/12.c36a12b6.js"><link rel="prefetch" href="/docs/assets/js/13.6b8662ce.js"><link rel="prefetch" href="/docs/assets/js/14.5d620010.js"><link rel="prefetch" href="/docs/assets/js/15.4122bd48.js"><link rel="prefetch" href="/docs/assets/js/16.8d93a132.js"><link rel="prefetch" href="/docs/assets/js/17.69c6038e.js"><link rel="prefetch" href="/docs/assets/js/18.914eb889.js"><link rel="prefetch" href="/docs/assets/js/19.bd1ed08f.js"><link rel="prefetch" href="/docs/assets/js/2.3b863439.js"><link rel="prefetch" href="/docs/assets/js/20.1cbf79b4.js"><link rel="prefetch" href="/docs/assets/js/21.ba65cf9d.js"><link rel="prefetch" href="/docs/assets/js/22.d8e0d5b8.js"><link rel="prefetch" href="/docs/assets/js/23.6b9a65d5.js"><link rel="prefetch" href="/docs/assets/js/24.67867769.js"><link rel="prefetch" href="/docs/assets/js/25.8c60fe9f.js"><link rel="prefetch" href="/docs/assets/js/26.ee61f325.js"><link rel="prefetch" href="/docs/assets/js/27.afc5c43c.js"><link rel="prefetch" href="/docs/assets/js/28.3991d147.js"><link rel="prefetch" href="/docs/assets/js/29.6cc277cc.js"><link rel="prefetch" href="/docs/assets/js/30.1519ab44.js"><link rel="prefetch" href="/docs/assets/js/32.e4aeaca6.js"><link rel="prefetch" href="/docs/assets/js/33.2f677ccf.js"><link rel="prefetch" href="/docs/assets/js/34.1662f222.js"><link rel="prefetch" href="/docs/assets/js/35.30b68999.js"><link rel="prefetch" href="/docs/assets/js/36.192b4bdd.js"><link rel="prefetch" href="/docs/assets/js/4.7b98c24f.js"><link rel="prefetch" href="/docs/assets/js/5.1a0a6137.js"><link rel="prefetch" href="/docs/assets/js/6.a6f34983.js"><link rel="prefetch" href="/docs/assets/js/7.7de3f2bf.js"><link rel="prefetch" href="/docs/assets/js/8.94808157.js"><link rel="prefetch" href="/docs/assets/js/9.5942a882.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.77686f37.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/img/logo.png" alt="Lb-Vue-Ui" class="logo"> <span class="site-name can-hide">Lb-Vue-Ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/startQuick.html" class="nav-link">
+  组件介绍
+</a></div><div class="nav-item"><a href="https://github.com/1045598742/Lb-VuElement-Ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/startQuick.html" class="nav-link">
+  组件介绍
+</a></div><div class="nav-item"><a href="https://github.com/1045598742/Lb-VuElement-Ui" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/" class="sidebar-link">介绍</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/install.html" class="sidebar-link">Install 安装</a></li><li><a href="/docs/startQuick.html" class="sidebar-link">StartQuick 快速上手</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/button.html" class="sidebar-link">Button 按钮</a></li><li><a href="/docs/switch.html" class="sidebar-link">Switch 开关</a></li><li><a href="/docs/rate.html" class="sidebar-link">Rate 评分</a></li><li><a href="/docs/input.html" class="sidebar-link">Input 输入框</a></li><li><a href="/docs/select.html" class="sidebar-link">Select 选择器</a></li><li><a href="/docs/date-picker.html" class="sidebar-link">Date-Picker 日期选择器</a></li><li><a href="/docs/pagination.html" class="sidebar-link">Pagination 分页器</a></li><li><a href="/docs/swiper.html" class="sidebar-link">Swiper 轮播图</a></li><li><a href="/docs/tree.html" class="sidebar-link">Tree 树形列表</a></li><li><a href="/docs/dialog.html" class="sidebar-link">Dialog 弹窗</a></li><li><a href="/docs/slider.html" class="active sidebar-link">Slider 滑块</a></li><li><a href="/docs/music.html" class="sidebar-link">Slider 滑块在音乐播放的引用</a></li><li><a href="/docs/clip-image.html" class="sidebar-link">Clip-Image 图片裁切</a></li><li><a href="/docs/form.html" class="sidebar-link">Form 表单组件准备开发中</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="滑块"><a href="#滑块" class="header-anchor">#</a> 滑块</h1> <!----> <h1 id=""><a href="#" class="header-anchor">#</a></h1> <h2>参数说明</h2> <table width="100%"><tr><td width="120">
+                参数
+        </td> <td width="250">
+                说明
+        </td> <td width="80">
+                类型
+        </td> <td width="120">
+                可选值
+        </td> <td width="160">
+                默认值
+        </td></tr> <tr><td>
+                type
+        </td> <td>
+                滑块方向
+        </td> <td>
+                string
+        </td> <td>
+                hz/vl
+        </td> <td>
+               hz
+        </td></tr> <tr><td>
+                v-model
+        </td> <td>
+                双向数据绑定的值
+        </td> <td>
+                number
+        </td> <td>
+                ——
+        </td> <td>
+               0
+        </td></tr> <tr><td>
+                max
+        </td> <td>
+                滑块最大值
+        </td> <td>
+                number
+        </td> <td>
+                ——
+        </td> <td>
+           1
+        </td></tr> <tr><td>
+               lang 
+        </td> <td>
+              滑块的宽或高(hz模式下代表宽，vl模式下代表高)  
+        </td> <td>
+                string
+        </td> <td>
+                css单位
+        </td> <td>
+           100%
+        </td></tr></table> <h1 id="-2"><a href="#-2" class="header-anchor">#</a></h1> <h2>事件说明</h2> <table width="100%"><tr><td width="80">
+                参数
+        </td> <td width="500">
+                说明
+        </td> <td width="250">
+                返回值
+        </td></tr> <tr><td>
+                input
+        </td> <td>
+                滑块变动即触发
+        </td> <td>
+             v-model值
+        </td></tr> <tr><td>
+                change
+        </td> <td>
+                鼠标移动滑块抬起触发
+        </td> <td>
+             v-model值
+        </td></tr></table></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2020-05-31 20:39:06</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/dialog.html" class="prev">
+        Dialog 弹窗
+      </a></span> <span class="next"><a href="/docs/music.html">
+        Slider 滑块在音乐播放的引用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.b2c5c351.js" defer></script><script src="/docs/assets/js/3.93e1bfa6.js" defer></script><script src="/docs/assets/js/31.b4dde4e1.js" defer></script>
+  </body>
+</html>

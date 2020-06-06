@@ -1,0 +1,60 @@
+.lb-input{
+    position: relative;
+    .lb-input_inner,.lb-textarea_inner{
+        width: 100%;
+        background-color: white;
+        box-sizing: border-box;
+       outline: 0;
+       border: 1px solid $border-color;
+       color: $font-color;
+       &:hover{
+        border-color: darken($border-color, 5%) ;
+    }
+    &:focus{
+        border-color: $primary ;
+    }
+    }
+   .lb-input_inner{
+    transition: all .2s;
+    padding: 0 15px;
+    border-radius: 4px;
+       height: 40px;
+       line-height: 40px;
+       cursor: pointer;
+   }
+   .lb-textarea_inner{
+       padding: 10px 15px;
+       max-width: 100%;
+   }
+   [class*=lb-input-icon]{
+    top: 50%;
+    color: #cdd1db;
+    transform: translateY(-50%);
+    cursor: pointer;
+    position: absolute;
+    font-size: 14px;
+   }
+   .lb-icon-clear,.lb-input-icon-next{
+       right: 10px;
+   }
+   .lb-input-icon-prev{
+    left: 10px;
+   }
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+   }
+   input[type="number"] {
+       -moz-appearance: textfield;
+   }
+}
+.lb-input-padding-prev{
+    .lb-input_inner{
+       padding-left: 30px;
+    }
+}
+.lb-input-padding-next{
+    .lb-input_inner{
+        padding-right:30px;
+    }
+}
