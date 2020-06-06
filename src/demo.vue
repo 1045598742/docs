@@ -1,8 +1,12 @@
 <template>
   <div class="demo-box">
     <div class="demo-case_box">
-      <h2><slot name="title"></slot></h2>
-      <p class="subtitle" ><slot name="subtitle">预览</slot></p>
+      <h2>
+        <slot name="title"></slot>
+      </h2>
+      <p class="subtitle">
+        <slot name="subtitle">预览</slot>
+      </p>
       <div class="case-main">
         <slot></slot>
       </div>
@@ -16,7 +20,9 @@
         @afterLeave="afterLeave"
       >
         <div class="code-pre" v-show="showCode">
-          <div class="code-inner" v-highlight> <pre class="pre"><code class="html">{{code}}</code></pre></div>
+          <div class="code-inner" v-highlight>
+            <pre class="pre"><code class="html">{{code}}</code></pre>
+          </div>
         </div>
       </transition>
 
@@ -30,20 +36,20 @@
 </template>
 <script>
 export default {
-    props:{
-      code:{
-        type:String,
-        defuault:''
-      }
-    },
+  props: {
+    code: {
+      type: String,
+      defuault: ""
+    }
+  },
   data() {
     return {
-      showCode: false,
-    };
+      showCode: false
+    }
   },
   computed: {
-    codeStr(){
-      return code.replace(/^ {8}/gm, '').trim()
+    codeStr() {
+      return code.replace(/^ {8}/gm, "").trim();
     }
   },
   methods: {
@@ -67,5 +73,5 @@ export default {
       el.style.height = "";
     }
   }
-};
+}
 </script>

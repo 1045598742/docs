@@ -27,7 +27,6 @@
   </demo>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -45,8 +44,8 @@ export default {
 <lb-button type="success" round> success </lb-button>`,
       code3: `<lb-button disabled>plant</lb-button>
 <lb-button disabled type="primary">primary</lb-button>
-<lb-button disabled type="danger">danger</lb-button>`,
-    };
+<lb-button disabled type="danger">danger</lb-button>`
+    }
   }
-};
+}
 </script>

@@ -1,7 +1,7 @@
 
 // import 'lb-vue-ui/Lb-vueUi.css'
 // import LbVueUi from 'lb-vue-ui'
-
+import 'babel-polyfill'
 import './public/packages/cssstyle/index.scss';
 import LbVueUi from './public/packages/index'
 import '../../src/index.scss'
